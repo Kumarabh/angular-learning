@@ -1,2 +1,21 @@
-<h3>App works</h3>
+<h3 [className]="'red'">App works</h3>
+<h3 [className]="'green'">App works</h3>
+
+<h3 [className]="user.isActive ? 'green' : 'red'">{{user.firstName}} </h3>
+<h3 [class.green]="user.isActive" [class.red]="!user.isActive">{{user.firstName}}</h3>
+<h3 [ngClass]="user.isActive ? 'green' : 'red'">{{user.firstName}}</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <router-outlet></router-outlet>
